@@ -1,0 +1,803 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.22)  22 NOV 2015 17:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**courseprojectpart2.tex
+(./courseprojectpart2.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Sweave.sty
+Package: Sweave 
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count88
+\FV@InFile=\read1
+\FV@TabBox=\box26
+\c@FancyVerbLine=\count89
+\FV@StepNumber=\count90
+\FV@OutFile=\write3
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ae/ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+))))
+(./courseprojectpart2.aux)
+\openout1 = `courseprojectpart2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 4.
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count91
+\scratchdimen=\dimen105
+\scratchbox=\box27
+\nofMPsegments=\count92
+\nofMParguments=\count93
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count94
+\MPscratchDim=\dimen106
+\MPnumerator=\count95
+\makeMPintoPDFobject=\count96
+\everyMPtoPDFconversion=\toks16
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(./courseprojectpart2-concordance.tex)
+! You can't use `macro parameter character #' in vertical mode.
+l.7 #
+     Statistical Inference Course Project - Part 2
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.9 #
+     In this project we will analyze the ToothGrowth data
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (59.20453pt too wide) in paragraph at lines 9--12
+[]\T1/aer/m/n/10 In this project we will an-a-lyze the Tooth-Growth data li-bra
+ry(datasets) data(ToothGrowth) 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.13 #
+      This datasets consists of 60 observations and three variables. Variabl...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.14 #
+      look at summary(ToothGrowth)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 16.
+! You can't use `macro parameter character #' in vertical mode.
+l.18 #
+      We will plot boxplots for each suppliment type (red are OJ, blue are V...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.21 #
+      95% Confidence Interval for each suppliment type and dosage
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.23   for(j in unique(ToothGrowth$
+                                   dose)){
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Misplaced alignment tab character &.
+l.24 ...x <- ToothGrowth$len[ToothGrowth$supp==i &
+                                                   ToothGrowth$dose==j]
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Extra }, or forgotten $.
+l.27   }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.28 }
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.29 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (2.08015pt too wide) in paragraph at lines 21--29
+[]\T1/aer/m/n/10 95for(i in levels(ToothGrowth$\OML/cmm/m/it/10 supp\OT1/cmr/m/
+n/10 ))[]$\T1/aer/m/n/10 dose)) x <-
+ []
+
+
+Overfull \hbox (268.65294pt too wide) in paragraph at lines 21--29
+\T1/aer/m/n/10 ToothGrowth$\OML/cmm/m/it/10 len\OT1/cmr/m/n/10 [\OML/cmm/m/it/1
+0 ToothGrowth$\T1/aer/m/n/10 supp==i  ToothGrowth$\OML/cmm/m/it/10 dose \OT1/cm
+r/m/n/10 == \OML/cmm/m/it/10 j\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 print\OT1/cmr/m
+/n/10 (\OML/cmm/m/it/10 paste\OT1/cmr/m/n/10 0("\OML/cmm/m/it/10 Supplimenttype
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 ; i; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 and\OT
+1/cmr/m/n/10 "\OML/cmm/m/it/10 ; j; \OT1/cmr/m/n/10 "\OML/cmm/m/it/10 mgdosage\
+OT1/cmr/m/n/10 95\OML/cmm/m/it/10 round\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 mean\O
+T1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) +
+ []
+
+
+Overfull \hbox (16.95572pt too wide) in paragraph at lines 21--29
+\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 ^^C \OML/cmm/m/it/10 qno
+rm\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 975) \OMS/cmsy/m/n/10 ^^C
+ \OML/cmm/m/it/10 sd\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cm
+m/m/it/10 =sqrt\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 length\OT1/cmr/m/n/10 (\OML/cm
+m/m/it/10 x\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2)\OML/cmm/m/it
+/10 ; \OT1/cmr/m/n/10 ""\OML/cmm/m/it/10 ; round\OT1/cmr/m/n/10 (\OML/cmm/m/it/
+10 mean\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + 1 \OMS/cmsy/m/n/1
+0 ^^C \OML/cmm/m/it/10 qnorm\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10
+ 975) \OMS/cmsy/m/n/10 ^^C
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.30 #
+      We can see that as dosage increases, tooth length also increases
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.31 #
+      We can also prove it performing t-tests
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 doseEffect0.5_
+                   to_1.0  <- t.test(ToothGrowth.dose0.5$len, ToothGrowth.do...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.38 #
+      95% C.I. of the difference in means between observations that received...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.39 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (30.74777pt too wide) in paragraph at lines 33--39
+[]\T1/aer/m/n/10 ToothGrowth.dose0.5 = sub-set(ToothGrowth, dose == 0.5) Tooth-
+Growth.dose1.0=
+ []
+
+
+Overfull \hbox (150.92908pt too wide) in paragraph at lines 33--39
+\T1/aer/m/n/10 dose == 2) doseEffect0.5$[]\OML/cmm/m/it/10 o[]:\OT1/cmr/m/n/10 
+0 \OML/cmm/m/it/10 < \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 t:test\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 ToothGrowth:dose\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/
+m/n/10 5$\T1/aer/m/n/10 len, ToothGrowth.dose1.0$\OML/cmm/m/it/10 len\OT1/cmr/m
+/n/10 )\OML/cmm/m/it/10 doseEffect\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m
+/n/10 5[]\OML/cmm/m/it/10 o[]:\OT1/cmr/m/n/10 095$ 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.40 doseEffect1.0_
+                   to_2.0  <- t.test( ToothGrowth.dose1.0$len,ToothGrowth.do...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.42 #
+      95% C.I. of the difference in tooth-length means between observations ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.43 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (113.47772pt too wide) in paragraph at lines 40--43
+[]\T1/aer/m/n/10 doseEffect1.0$[]\OML/cmm/m/it/10 o[]:\OT1/cmr/m/n/10 0 \OML/cm
+m/m/it/10 < \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 t:test\OT1/cmr/m/n/10 (\OML/cm
+m/m/it/10 ToothGrowth:dose\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0$
+\T1/aer/m/n/10 len,ToothGrowth.dose2.0$\OML/cmm/m/it/10 len\OT1/cmr/m/n/10 )\OM
+L/cmm/m/it/10 doseEffect\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0[]\
+OML/cmm/m/it/10 o[]:\OT1/cmr/m/n/10 095$ 
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.44 #
+      Now lets compare the tooth length increase between different supplimen...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.49 #
+      The 95% c.i. of the difference in mean tooth length increase between o...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.50 #
+      However p-value is only 6%. We will perform more test comparing these ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (214.47423pt too wide) in paragraph at lines 44--51
+\T1/aer/m/n/10 Growth.typeVC = sub-set(ToothGrowth, supp == "VC") type-Ef-fect 
+<- t.test(ToothGrowth.typeOJ$\OML/cmm/m/it/10 len; ToothGrowth:typeVC$\T1/aer/m
+/n/10 len)
+ []
+
+! Misplaced alignment tab character &.
+l.52 ...se0.5 = subset(ToothGrowth, supp == "OJ" &
+                                                   dose==0.5)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.53 ...se1.0 = subset(ToothGrowth, supp == "OJ" &
+                                                   dose==1.0)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.54 ...se2.0 = subset(ToothGrowth, supp == "OJ" &
+                                                   dose==2.0)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.55 ...se0.5 = subset(ToothGrowth, supp == "VC" &
+                                                   dose==0.5)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.56 ...se1.0 = subset(ToothGrowth, supp == "VC" &
+                                                   dose==1.0)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.57 ...se2.0 = subset(ToothGrowth, supp == "VC" &
+                                                   dose==2.0)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.58 typeEffect_
+                at0.5 <- t.test(ToothGrowth.typeOJ.dose0.5$len, ToothGrowth....
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.61 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (22.84738pt too wide) in paragraph at lines 52--61
+[]\T1/aer/m/n/10 ToothGrowth.typeOJ.dose0.5 = sub-set(ToothGrowth, supp == "OJ"
+  dose==0.5)
+ []
+
+
+Overfull \hbox (7.84738pt too wide) in paragraph at lines 52--61
+\T1/aer/m/n/10 Tooth-Growth.typeOJ.dose1.0 = sub-set(ToothGrowth, supp == "OJ" 
+ dose==1.0)
+ []
+
+
+Overfull \hbox (7.84738pt too wide) in paragraph at lines 52--61
+\T1/aer/m/n/10 Tooth-Growth.typeOJ.dose2.0 = sub-set(ToothGrowth, supp == "OJ" 
+ dose==2.0)
+ []
+
+
+Overfull \hbox (10.94797pt too wide) in paragraph at lines 52--61
+\T1/aer/m/n/10 Tooth-Growth.typeVC.dose0.5 = sub-set(ToothGrowth, supp == "VC" 
+ dose==0.5)
+ []
+
+
+Overfull \hbox (10.94797pt too wide) in paragraph at lines 52--61
+\T1/aer/m/n/10 Tooth-Growth.typeVC.dose1.0 = sub-set(ToothGrowth, supp == "VC" 
+ dose==1.0)
+ []
+
+
+Overfull \hbox (10.94797pt too wide) in paragraph at lines 52--61
+\T1/aer/m/n/10 Tooth-Growth.typeVC.dose2.0 = sub-set(ToothGrowth, supp == "VC" 
+ dose==2.0)
+ []
+
+
+Overfull \hbox (147.48973pt too wide) in paragraph at lines 52--61
+\T1/aer/m/n/10 typeEffect$[]\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 0\OML/cmm/m/it/10
+ :\OT1/cmr/m/n/10 5 \OML/cmm/m/it/10 < \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 t:t
+est\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ToothGrowth:typeOJ:dose\OT1/cmr/m/n/10 0\O
+ML/cmm/m/it/10 :\OT1/cmr/m/n/10 5$\T1/aer/m/n/10 len, ToothGrowth.typeVC.dose0.
+5$\OML/cmm/m/it/10 len\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 typeEffect[]t\OT1/cmr/m
+/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0 \OML/cmm/m/it/10 <
+ []
+
+
+Overfull \hbox (68.40068pt too wide) in paragraph at lines 52--61
+\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 t:test\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 To
+othGrowth:typeOJ:dose\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0$\T1/a
+er/m/n/10 len, ToothGrowth.typeVC.dose1.0$\OML/cmm/m/it/10 len\OT1/cmr/m/n/10 )
+\OML/cmm/m/it/10 typeEffect[]t\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/1
+0 0 \OML/cmm/m/it/10 <
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.62 #
+      For the tests below:
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.63 #
+      Null Hypothesis: True difference in means is equal to 0
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.64 #
+      Alternative hypothesis: True difference in means is not equal to 0
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.65 #
+      Significance level: 5%
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.67 typeEffect_
+                at0.5
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.68 #
+      95% C.I. does not contain zero and it is positive (p-value is 0.6%). W...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.69 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.70 typeEffect_
+                at1.0
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.71 #
+      95% C.I. does not contain zero and it is positive (p-value 0.1%). We r...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.72 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 typeEffect_
+                at2.0
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.74 #
+      95% C.I. does contain zero (p-value is 96%). We fail to reject the nul...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in math mode.
+l.75 #
+      We conlcude that at 2.0mg dosage there is no difference between supp t...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.76 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (420.31918pt too wide) in paragraph at lines 73--76
+[]\T1/aer/m/n/10 typeEffect$[]\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 2\OML/cmm/m/it/
+10 :\OT1/cmr/m/n/10 095\OML/cmm/m/it/10 Weconlcudethatat\OT1/cmr/m/n/10 2\OML/c
+mm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 mgdosagethereisnodifferencebetwee
+nsupptypesintoothlengthincreasebutat\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr
+/m/n/10 5\OML/cmm/m/it/10 mgand\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/
+10 0\OML/cmm/m/it/10 mgOJtypeshavelargertoothlengthincrease$ 
+ []
+
+[1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./courseprojectpart2.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 23 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 2630 strings out of 493089
+ 38082 string characters out of 6134841
+ 93350 words of memory out of 5000000
+ 6094 multiletter control sequences out of 15000+600000
+ 6552 words of font info for 18 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,4n,23p,377b,119s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb>
+Output written on courseprojectpart2.pdf (1 page, 62055 bytes).
+PDF statistics:
+ 29 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 5 words of extra memory for PDF output out of 10000 (max. 10000000)
+

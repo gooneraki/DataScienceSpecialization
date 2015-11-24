@@ -1,0 +1,7 @@
+| To notify Coursera that you have completed this lesson, please upload
+| ‘exdata-030_Principles_of_Analytic_Graphs.txt’ to Coursera manually. You
+| may do so by visiting the Programming Assignments page on your course
+| website and selecting the Submit button next to the appropriate swirl
+| lesson. I've placed the file in the following directory:
+
+C:/Users/antoniou.a/Dropbox/Coursera/Data_Science_Specialization/04Exploratory_Data_Analysis/workings

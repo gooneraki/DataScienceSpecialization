@@ -1,0 +1,17 @@
+{
+    "contents" : "best <- function(state, outcome) {\n    ## Read outcome data\n    \n    data <- read.csv(\"outcome-of-care-measures.csv\", colClasses = \"character\")\n    \n    ## Check that state and outcome are valid\n    \n    if (outcome != \"heart attack\" && outcome != \"heart failure\" && outcome != \"pneumonia\" ) {\n        stop(\"invalid outcome\") }\n    if (!is.element(state, data$State)) {\n        stop(\"invalid state\") }\n    \n    ## Return hospital name in that state with lowest 30-day death\n    useful_data <- data.frame(matrix(ncol=3))\n    if (outcome == \"heart attack\") {\n        useful_data <- data[data[,7]==state, c(2,7,11)] \n    } else if (outcome == \"heart failure\") {\n        useful_data <- data[data[,7]==state, c(2,7,17)]\n    } else if (outcome == \"pneumonia\") {\n        useful_data <- data[data[,7]==state, c(2,7,23)] }\n    useful_data[,3] <-  as.numeric(useful_data[,3])\n    useful_data <- useful_data[complete.cases(useful_data),]\n    best <- min(useful_data[,3],na.rm=T)\n    Result <- useful_data[useful_data[,3]==best,]\n    Result <- Result[order(Result[,1]),]\n    Result[1,1]\n    \n}",
+    "created" : 1403187270232.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4108136160",
+    "id" : "71CCFCAC",
+    "lastKnownWriteTime" : 1403198572,
+    "path" : "C:/Users/Alexandros/Dropbox/03 Coursera/R Programming/week3/best.R",
+    "project_path" : "best.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "rankall <- function(outcome, num = \"best\") {\n    ## Read outcome data\n    data <- read.csv(\"outcome-of-care-measures.csv\", colClasses = \"character\")\n    \n    ## Check that state and outcome are valid\n    if (outcome != \"heart attack\" && outcome != \"heart failure\" && outcome != \"pneumonia\" ) {\n        stop(\"invalid outcome\") }\n    \n    ## For each state, find the hospital of the given rank\n    temp_data <- data.frame(matrix(ncol=3))\n    allstates <- unique(data$State)\n    output <- numeric()\n    result <- data.frame(Hospital.Name=character(0), State=character(0))\n    for (state in allstates) {\n        if (outcome == \"heart attack\") {\n            temp_data <- data[data[,7]==state, c(2,7,11)] \n        } else if (outcome == \"heart failure\") {\n            temp_data <- data[data[,7]==state, c(2,7,17)]\n        } else if (outcome == \"pneumonia\") {\n            temp_data <- data[data[,7]==state, c(2,7,23)] }\n        temp_data[,3] <-  as.numeric(temp_data[,3])\n        temp_data <- temp_data[complete.cases(temp_data),]\n        temp_data <- temp_data[order(temp_data[,3],temp_data[,1]),]\n        \n        if (num==\"best\") {\n            result <- rbind(result,temp_data[1,1:2])\n        } else if (num==\"worst\") {\n            result <- rbind(result,temp_data[nrow(temp_data),1:2])\n        } else {\n            output <- as.numeric(num)\n            result <- rbind(result,temp_data[output,1:2])     \n        }     \n    \n    }\n    \n    ## Return a data frame with the hospital names and the\n    ## (abbreviated) state name\n    result <- result[order(result[,2]),]\n    names(result) <- c(\"hospital\",\"state\")\n    result\n}\n",
+    "created" : 1403214696687.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2956854844",
+    "id" : "194F06E1",
+    "lastKnownWriteTime" : 1403227596,
+    "path" : "C:/Users/Alexandros/Dropbox/03 Coursera/R Programming/week3/rankall.R",
+    "project_path" : "rankall.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

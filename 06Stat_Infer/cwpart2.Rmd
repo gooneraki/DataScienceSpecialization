@@ -1,0 +1,71 @@
+---
+title: "Course Project Part Two"
+author: "Alexandros Antoniou"
+date: "22 Nov 2015"
+output: pdf_document
+---
+
+```{r}
+#In this project we will analyze the ToothGrowth data
+library(datasets)
+data(ToothGrowth)
+
+#This datasets consists of 60 observations and three variables. Variables are
+#len (numeric: tooth length increase),
+#supp (categorical: VC or OJ) and
+#dose (numerical: dose level - 0.5mg, 1mg or 2mg)
+summary(ToothGrowth)
+table(ToothGrowth$supp, as.factor(ToothGrowth$dose))
+#We will plot boxplots for each suppliment type (red are OJ, blue are VC)
+#and dosage vs tooth length increase
+boxplot(len~supp*dose, data = ToothGrowth, col = c("red", "blue"),
+        main = "Tooth Growth", xlab ="Suppliment type and dose mg",
+        ylab = "tooth length increase in mm")
+
+#We can see that as dosage increases, tooth length also increases
+#We will prove this for dosages 1.0mg vs 2.0mg which is not obvious
+ToothGrowth.dose1.0= subset(ToothGrowth, dose == 1)
+ToothGrowth.dose2.0= subset(ToothGrowth, dose == 2)
+doseEffect1.0_to_2.0  <- t.test( ToothGrowth.dose2.0$len,ToothGrowth.dose1.0$len)
+doseEffect1.0_to_2.0$conf.int
+#95% C.I. of the difference in tooth-length means between observations
+#that received 1.0mg and 2.0mg dosage does not contain 0.
+#We reject the null hypothesis that the true difference in means is zero.
+
+#Now lets compare the tooth length increase between different suppliment types.
+ToothGrowth.typeOJ = subset(ToothGrowth, supp == "OJ")
+ToothGrowth.typeVC = subset(ToothGrowth, supp == "VC")
+typeEffect <- t.test(ToothGrowth.typeOJ$len, ToothGrowth.typeVC$len)
+typeEffect$conf.int
+typeEffect$p.value
+#The 95% c.i. of the difference in mean tooth length increase between observations of
+#supp type OJ and supp type VC does contain 0. We fail to reject the
+#null hypothesis that states the difference in means is zero.
+#However p-value is only 6%. We will perform more tests. From the boxplots we can see that
+#the means for 2.0mg between the two supp types looks the same. We will perform different tests
+#for 2mg dosage and less than 2.0mg dosage
+ToothGrowth.typeOJ.doselt2.0 = subset(ToothGrowth, supp == "OJ" & dose<2.0)
+ToothGrowth.typeOJ.doseeq2.0 = subset(ToothGrowth, supp == "OJ" & dose==2.0)
+ToothGrowth.typeVC.doselt2.0 = subset(ToothGrowth, supp == "VC" & dose<2.0)
+ToothGrowth.typeVC.doseeq2.0 = subset(ToothGrowth, supp == "VC" & dose==2.0)
+typeEffect_lt2.0 <- t.test(ToothGrowth.typeOJ.doselt2.0 $len, ToothGrowth.typeVC.doselt2.0 $len)
+typeEffect_eq2.0<- t.test(ToothGrowth.typeOJ.doseeq2.0$len, ToothGrowth.typeVC.doseeq2.0$len)
+#For the tests below:
+#Null Hypothesis: True difference in means is equal to 0
+#Alternative hypothesis: True difference in means is not equal to 0
+#Significance level: 5%
+
+typeEffect_lt2.0$conf.int
+
+#95% C.I. does not contain zero. We reject the null hypothesis and conculde there is a 
+#difference in tooth length increase between types when dosage is less than 2.0mg
+
+typeEffect_eq2.0$conf.int
+
+#95% C.I. does  contain zero. We fail to reject the null hypothesis 
+
+
+
+
+```
+

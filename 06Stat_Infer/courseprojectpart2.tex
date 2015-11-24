@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage{Sweave}
+\begin{document}
+\input{courseprojectpart2-concordance}
+
+#Statistical Inference Course Project - Part 2
+
+#In this project we will analyze the ToothGrowth data
+library(datasets)
+data(ToothGrowth)
+
+#This datasets consists of 60 observations and three variables. Variables are len (numeric: tooth length increase), supp (categorical: VC or OJ) and dose (numerical: dose level - 0.5mg, 1mg or 2mg)
+#look at summary(ToothGrowth)
+summary(ToothGrowth)
+table(ToothGrowth$supp, as.factor(ToothGrowth$dose))
+
+#We will plot boxplots for each suppliment type (red are OJ, blue are VC) and dosage vs tooth length increase
+boxplot(len~supp*dose, data = ToothGrowth, col = c("red", "blue"), main = "Tooth Growth", xlab ="Suppliment type and dose mg", ylab = "tooth length increase in mm")
+
+#95% Confidence Interval for each suppliment type and dosage
+for(i in levels(ToothGrowth$supp)){
+  for(j in unique(ToothGrowth$dose)){
+    x <- ToothGrowth$len[ToothGrowth$supp==i & ToothGrowth$dose==j]
+    print(paste0("Suppliment type ", i, " and ", j, "mg dosage 95% confidence interval of the mean: ",
+            round(mean(x) + -1* qnorm(0.975) * sd(x)/sqrt(length(x)),2)," ",round(mean(x) + 1* qnorm(0.975) * sd(x)/sqrt(length(x)),2)))
+  }
+}
+
+#We can see that as dosage increases, tooth length also increases
+#We can also prove it performing t-tests
+
+ToothGrowth.dose0.5 = subset(ToothGrowth, dose == 0.5)
+ToothGrowth.dose1.0= subset(ToothGrowth, dose == 1)
+ToothGrowth.dose2.0= subset(ToothGrowth, dose == 2)
+doseEffect0.5_to_1.0  <- t.test(ToothGrowth.dose0.5$len, ToothGrowth.dose1.0$len)
+doseEffect0.5_to_1.0
+#95% C.I. of the difference in means between observations that received 0.5mg and 1.0mg dosage does not contain 0. We reject the null hypothesis that the true difference in means is zero.
+
+doseEffect1.0_to_2.0  <- t.test( ToothGrowth.dose1.0$len,ToothGrowth.dose2.0$len)
+doseEffect1.0_to_2.0
+#95% C.I. of the difference in tooth-length means between observations that received 1.0mg and 2.0mg dosage does not contain 0. We reject the null hypothesis that the true difference in means is zero and accept alternative hypothesis i.e. we accept that there is a difference in tooth length increase between observations that received 1.0 mg vs 2.0 mg
+
+#Now lets compare the tooth length increase between different suppliment types.
+ToothGrowth.typeOJ = subset(ToothGrowth, supp == "OJ")
+ToothGrowth.typeVC = subset(ToothGrowth, supp == "VC")
+typeEffect <- t.test(ToothGrowth.typeOJ$len, ToothGrowth.typeVC$len)
+typeEffect
+#The 95% c.i. of the difference in mean tooth length increase between observations of supp type OJ and supp type VC does contain 0. We fail to reject the null hypothesis that states the difference in means is zero.
+#However p-value is only 6%. We will perform more test comparing these differences
+
+ToothGrowth.typeOJ.dose0.5 = subset(ToothGrowth, supp == "OJ" & dose==0.5)
+ToothGrowth.typeOJ.dose1.0 = subset(ToothGrowth, supp == "OJ" & dose==1.0)
+ToothGrowth.typeOJ.dose2.0 = subset(ToothGrowth, supp == "OJ" & dose==2.0)
+ToothGrowth.typeVC.dose0.5 = subset(ToothGrowth, supp == "VC" & dose==0.5)
+ToothGrowth.typeVC.dose1.0 = subset(ToothGrowth, supp == "VC" & dose==1.0)
+ToothGrowth.typeVC.dose2.0 = subset(ToothGrowth, supp == "VC" & dose==2.0)
+typeEffect_at0.5 <- t.test(ToothGrowth.typeOJ.dose0.5$len, ToothGrowth.typeVC.dose0.5$len)
+typeEffect_at1.0<- t.test(ToothGrowth.typeOJ.dose1.0$len, ToothGrowth.typeVC.dose1.0$len)
+typeEffect_at2.0<-t.test(ToothGrowth.typeOJ.dose2.0$len, ToothGrowth.typeVC.dose2.0$len)
+
+#For the tests below:
+#Null Hypothesis: True difference in means is equal to 0
+#Alternative hypothesis: True difference in means is not equal to 0
+#Significance level: 5%
+
+typeEffect_at0.5
+#95% C.I. does not contain zero and it is positive (p-value is 0.6%). We reject the null hypothesis 
+
+typeEffect_at1.0
+#95% C.I. does not contain zero and it is positive (p-value 0.1%). We reject the null hypothesis 
+
+typeEffect_at2.0
+#95% C.I. does contain zero (p-value is 96%). We fail to reject the null hypothesis.
+#We conlcude that at 2.0mg dosage there is no difference between supp types in tooth length increase but at 0.5mg and 1.0mg OJ types have larger tooth length increase
+
+
+
+
+\end{document}

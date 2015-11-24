@@ -1,0 +1,17 @@
+{
+    "contents" : "rankhospital <- function(state, outcome, num = \"best\") {\n    ## Read outcome data\n    data <- read.csv(\"outcome-of-care-measures.csv\", colClasses = \"character\")\n    \n    ## Check that state and outcome are valid\n    if (outcome != \"heart attack\" && outcome != \"heart failure\" && outcome != \"pneumonia\" ) {\n        stop(\"invalid outcome\") }\n    if (!is.element(state, data$State)) {\n        stop(\"invalid state\") }\n    \n    ## Return hospital name in that state with the given rank\n    ## 30-day death rate\n    useful_data <- data.frame(matrix(ncol=3))\n    if (outcome == \"heart attack\") {\n        useful_data <- data[data[,7]==state, c(2,7,11)] \n    } else if (outcome == \"heart failure\") {\n        useful_data <- data[data[,7]==state, c(2,7,17)]\n    } else if (outcome == \"pneumonia\") {\n        useful_data <- data[data[,7]==state, c(2,7,23)] }\n    useful_data[,3] <-  as.numeric(useful_data[,3])\n    useful_data <- useful_data[complete.cases(useful_data),]\n    useful_data <- useful_data[order(useful_data[,3],useful_data[,1]),]\n    output <- numeric()\n    if (num==\"best\") {\n        useful_data[1,1]\n    } else if (num==\"worst\") {\n        useful_data[nrow(useful_data),1]\n    } else {\n        output <- as.numeric(num)\n        useful_data[output,1]     \n    }\n   \n    \n}\n",
+    "created" : 1403199201515.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "601403409",
+    "id" : "B9379BC",
+    "lastKnownWriteTime" : 1403214240,
+    "path" : "C:/Users/Alexandros/Dropbox/03 Coursera/R Programming/week3/rankhospital.R",
+    "project_path" : "rankhospital.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
